@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -rl '.js'. | xargs rm
+grep -rlZ '.js'. | xargs -0 rm
