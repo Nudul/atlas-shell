@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lrt | sort -V | head -n 10
+ls -lrt | sort -V | tail -n 10
