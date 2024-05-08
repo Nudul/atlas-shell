@@ -1,3 +1,2 @@
 #!/bin/bash
-#!/bin/bash
 printf "%s\n" "Best School" > "$(printf "%q" "\*\\'\"Best School\"'\\*$\\?\\*\\*\\*\\*\\*:")"
