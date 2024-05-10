@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((POWER=10 DIVIDE =2 POWER/DIVIDE))
+echo $((POWER/DIVIDE)))
