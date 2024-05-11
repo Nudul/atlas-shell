@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 #This script displays "Best School" 10 times, but uses the while loop instead of for
-while [1..10];do
-	echo "Best School"
+counter=0
+while [$counter -lt 10];do
+	echo 'Best School'
+	((counter++))
 done
