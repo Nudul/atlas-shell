@@ -2,7 +2,9 @@
 ##This script displays a list of content in the current directory and removes any number or dash before the name
 for file in *; do
 	if [[ $file == -* ]]; then
-		name_after_dash=${file#*-}
-		echo "$name_after_dash"
+		no_dash=${file#*-}
+		echo "$no_dash"
+	else
+		echo "$file"
 	fi
 done
