@@ -3,18 +3,19 @@
 filename="school"
 
 #checking for file existence
-if [ -f "$filename" ]; then
+if [ -e "$filename" ]; then
 	echo "school file exists"
 #checking if its empty
 if [ ! -s "$filename" ]; then
 	echo "school file is empty"
 else
 	echo "school file is not empty"
-fi
+	fi
 #checking if the file is regular
 if [ -f "$filename" ]; then
 	echo "school is a regular file"
-fi
+	fi
 else
-	echo "school file does not exist"
+#does nothing if file doesn't exist
+	:
 fi
