@@ -3,7 +3,7 @@
 filename="school"
 
 #checking for file existence
-if [ -f "$filename" ]; then
+if [ -e "$filename" ]; then
 	echo "school file exists"
 #checking if its empty
 if [ ! -s "$filename" ]; then
