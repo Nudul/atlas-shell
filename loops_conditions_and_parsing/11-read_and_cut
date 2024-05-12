@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #This script displays the content of /etc/passwd
-while IFS=: read -r username (void)password uid (void)gid (void)gecos home (void)shell
+while IFS=: read -r username password uid gid gecos home shell
 do
 	echo "$username:$uid:$home"
 done < /etc/passwd
