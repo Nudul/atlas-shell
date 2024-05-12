@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 ##This script displays a list of content in the current directory and removes any number or dash before the name
 for file in *; do
-	if [[ $file =~ ^[0-9]+- ]]; then
+	if [[ $file == -* ]]; then
+		echo "$file"
+	elif [[ $file =~ ^[0-9]+- ]]; then
 	part_after_dash="${file#*-}"
 	echo "$part_after_dash"
 	else
