@@ -4,7 +4,8 @@ hour=0
 minute=1
 
 while [ $hour -le 12 ] && [ $minute -le 59 ]; do
-	echo "$hour:$minute"
+	echo "$hour"
+	echo "$minute"
 	((minute++))
 
 	if [ $minute -gt 59 ]; then
