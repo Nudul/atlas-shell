@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+for file in *; do
+	if [[ $file =~ ^[0-9]+- ]]; then
+	part_after_dash="${file#*-}"
+	echo "$parT_after_dash"
+	fi
+done
