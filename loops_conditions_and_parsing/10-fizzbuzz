@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#This script displays numbers from 1-100 with specific rules for different multiples of 3 and 5
+#loops thru numbers 1 and 100
+for ((i=1; i<=100; i++)); do
+	#checks if number is a multiple of 3 and 5
+	if ((i % 3 == 0 && i % 5 == 0)); then
+	echo "FizzBuzz"
+	#checks if number is a multiple of 3
+	elif ((i % 3 == 0)); then
+	echo "Fizz"
+	#checks if number is multiple of 5
+	elif ((i % 5 == 0 )); then
+	echo "Buzz"
+	else
+	#displays number otherwise
+	echo "$i"
+fi
+done
