@@ -4,15 +4,15 @@ hour=0
 minute=1
 
 while [ $hour -le 12 ] && [ $minute -le 59 ]; do
-	if [ $hour -lt 10 ]; then
-		echo -n "0$minute:"
+	if [ $minute -lt 10 ]; then
+		echo -n "0$minute"
 	else
-		echo -n "$minute:"
+		echo -n "$minute"
 	fi
-	if [ $minute -eq 59 ]; then
-		echo -n ": $hour"
-		minute=1
-		((hour++))
-	fi
-	((minute++))
+		if [ $minute -eq 59 ]; then
+			echo -n ": $hour"
+			minute=1
+			((hour++))
+		fi
+		((minute++))
 done
