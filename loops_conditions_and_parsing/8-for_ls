@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 ##This script displays a list of content in the current directory and removes any number or dash before the name
-for file in *; do
-	if [[ $file == -* ]]; then
-		no_dash=${file#*-}
-		echo "$no_dash"
-	else
-		echo "$file"
-	fi
+items=$(find. -maxdepth 1)
+for items in $items; do
+	after_dash=$(echo "$item" | grep -oE '[^-]*$')
+	echo "$after_dash"
 done
