@@ -4,5 +4,7 @@ for file in *; do
 	if [[ $file =~ ^[0-9]+- ]]; then
 	part_after_dash="${file#*-}"
 	echo "$part_after_dash"
+	else
+		echo "$file"
 	fi
 done
