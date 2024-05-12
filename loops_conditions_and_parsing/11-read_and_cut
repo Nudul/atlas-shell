@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 #This script displays the content of /etc/passwd
+: "$_unused"
+
 while IFS=: read -r username password uid gid gecos home shell
 do
 	echo "$username:$uid:$home"
