@@ -9,6 +9,6 @@ IFS=:
 
 while read -r username password uid gid groups home shell; do
 	position=$((uid - current_uid))
-	output="The user $username is part of the $groups gang, lives in $home and rides $shell. $position's place is protected by the passcode $password, more info about the user here: $username"
+	output="The user $username is part of the $gid gang, lives in $home and rides $shell. $position's place is protected by the passcode $password, more info about the user here: $username"
 	echo "$output"
 done < /etc/passwd
