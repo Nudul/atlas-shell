@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ##This script displays a list of content in the current directory and removes any number or dash before the name
-items=$(find. -maxdepth 1)
-for item in $items; do
-	after_dash="${item##*-}"
-	echo "$after_dash"
+
+list=$(ls)
+for i in $list; do
+	echo "i" | cut -d '-'
 done
