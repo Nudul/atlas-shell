@@ -5,3 +5,4 @@ until [ $counter -ge 10 ];do
 	echo "Best School"
 	((counter++))
 done
+##blahblahblah
